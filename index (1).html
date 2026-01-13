@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java版MOD → 統合版アドオン変換</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #020617;
+      border-radius: 16px;
+      padding: 24px 28px 28px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 20px 40px rgba(0,0,0,.4);
+    }
+    h1 {
+      font-size: 1.25rem;
+      margin: 0 0 8px;
+    }
+    p {
+      font-size: .9rem;
+      color: #94a3b8;
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+    input[type=file] {
+      width: 100%;
+      margin-bottom: 12px;
+      color: #cbd5f5;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      background: #22c55e;
+      color: #022c22;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    button:hover { background: #16a34a; }
+    .note {
+      margin-top: 12px;
+      font-size: .75rem;
+      color: #64748b;
+    }
+    .footer {
+      margin-top: 16px;
+      font-size: .7rem;
+      text-align: center;
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>MOD → 統合版アドオン変換</h1>
+    <p>
+      Java版MOD（Forge / Fabric）をアップロードして、<br />
+      統合版アドオン用の雛形を生成します。
+    </p>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="mod" accept=".jar" required />
+      <button type="submit">変換する</button>
+    </form>
+
+    <div class="note">
+      ※ Javaコードの完全変換はできません。<br />
+      テクスチャ・レシピ・定義データのみ対応予定。
+    </div>
+
+    <div class="footer">
+      Minecraft is a trademark of Mojang Studios
+    </div>
+  </div>
+</body>
+</html>
