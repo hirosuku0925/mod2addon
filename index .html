@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mod2addon | Java版MOD → 統合版アドオン</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #020617;
+      border-radius: 16px;
+      padding: 26px 30px 30px;
+      width: 100%;
+      max-width: 460px;
+      box-shadow: 0 20px 40px rgba(0,0,0,.45);
+    }
+    h1 {
+      font-size: 1.35rem;
+      margin: 0 0 6px;
+    }
+    .subtitle {
+      font-size: .85rem;
+      color: #94a3b8;
+      margin-bottom: 14px;
+    }
+    p {
+      font-size: .9rem;
+      color: #cbd5f5;
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+    ul {
+      font-size: .85rem;
+      color: #a5b4fc;
+      margin: 0 0 16px 18px;
+      line-height: 1.6;
+    }
+    input[type=file] {
+      width: 100%;
+      margin: 10px 0 12px;
+      color: #cbd5f5;
+    }
+    button {
+      width: 100%;
+      padding: 11px;
+      border-radius: 10px;
+      border: none;
+      background: #22c55e;
+      color: #022c22;
+      font-weight: bold;
+      cursor: not-allowed;
+      opacity: .6;
+    }
+    .note {
+      margin-top: 14px;
+      font-size: .75rem;
+      color: #94a3b8;
+      line-height: 1.6;
+    }
+    .links {
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      font-size: .75rem;
+    }
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .footer {
+      margin-top: 18px;
+      font-size: .7rem;
+      text-align: center;
+      color: #475569;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>mod2addon</h1>
+    <div class="subtitle">Java版MOD → 統合版アドオン変換支援ツール</div>
+
+    <p>
+      <strong>mod2addon</strong> は、Minecraft Java版MODを
+      統合版（Bedrock Edition）アドオンへ移植する作業を
+      <strong>効率化するためのオープンソースツール</strong>です。
+    </p>
+
+    <p>現在対応（予定）している変換内容：</p>
+    <ul>
+      <li>テクスチャ構造の整理・コピー</li>
+      <li>クラフトレシピの形式変換</li>
+      <li>Behavior / Resource Pack の雛形生成</li>
+      <li>非対応要素の自動レポート</li>
+    </ul>
+
+    <p>
+      ⚠️ Javaコード（Forge / Fabric API）の
+      <strong>完全自動変換はできません</strong>。
+      本ツールは「再制作を楽にする」ことを目的としています。
+    </p>
+
+    <input type="file" disabled />
+    <button>変換機能は準備中です</button>
+
+    <div class="note">
+      このサイトは <strong>オープンソース</strong> として公開されています。
+    </div>
+
+    <div class="links">
+      <a href="#">GitHub</a>
+      <a href="#">License</a>
+    </div>
+
+    <div class="footer">
+      This project is not affiliated with Mojang Studios.<br />
+      Minecraft is a trademark of Mojang Studios.
+    </div>
+  </div>
+</body>
+</html>
