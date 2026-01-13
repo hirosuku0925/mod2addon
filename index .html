@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mod2addon | Java版MOD → 統合版アドオン</title>
+  <title>mod2addon | Java MOD to Bedrock Addon</title>
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -18,19 +18,19 @@
     .card {
       background: #020617;
       border-radius: 16px;
-      padding: 26px 30px 30px;
+      padding: 28px 32px 32px;
       width: 100%;
-      max-width: 460px;
+      max-width: 480px;
       box-shadow: 0 20px 40px rgba(0,0,0,.45);
     }
     h1 {
-      font-size: 1.35rem;
+      font-size: 1.4rem;
       margin: 0 0 6px;
     }
     .subtitle {
       font-size: .85rem;
       color: #94a3b8;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
     p {
       font-size: .9rem;
@@ -44,30 +44,25 @@
       margin: 0 0 16px 18px;
       line-height: 1.6;
     }
-    input[type=file] {
-      width: 100%;
-      margin: 10px 0 12px;
-      color: #cbd5f5;
-    }
     button {
       width: 100%;
       padding: 11px;
       border-radius: 10px;
       border: none;
-      background: #22c55e;
-      color: #022c22;
+      background: #334155;
+      color: #e5e7eb;
       font-weight: bold;
       cursor: not-allowed;
-      opacity: .6;
+      opacity: .7;
     }
     .note {
-      margin-top: 14px;
+      margin-top: 16px;
       font-size: .75rem;
       color: #94a3b8;
       line-height: 1.6;
     }
     .links {
-      margin-top: 16px;
+      margin-top: 18px;
       display: flex;
       justify-content: space-between;
       font-size: .75rem;
@@ -78,7 +73,7 @@
     }
     a:hover { text-decoration: underline; }
     .footer {
-      margin-top: 18px;
+      margin-top: 20px;
       font-size: .7rem;
       text-align: center;
       color: #475569;
@@ -89,33 +84,31 @@
 <body>
   <div class="card">
     <h1>mod2addon</h1>
-    <div class="subtitle">Java版MOD → 統合版アドオン変換支援ツール</div>
+    <div class="subtitle">Java Edition MOD → Bedrock Edition Addon</div>
 
     <p>
-      <strong>mod2addon</strong> は、Minecraft Java版MODを
-      統合版（Bedrock Edition）アドオンへ移植する作業を
-      <strong>効率化するためのオープンソースツール</strong>です。
+      <strong>mod2addon</strong> is a tool designed to streamline the process of
+      porting Minecraft Java Edition mods to Bedrock Edition addons.
+      It focuses on generating addon templates and converting data-based assets.
     </p>
 
-    <p>現在対応（予定）している変換内容：</p>
+    <p>Planned and supported features:</p>
     <ul>
-      <li>テクスチャ構造の整理・コピー</li>
-      <li>クラフトレシピの形式変換</li>
-      <li>Behavior / Resource Pack の雛形生成</li>
-      <li>非対応要素の自動レポート</li>
+      <li>Texture and asset structure conversion</li>
+      <li>Recipe format conversion</li>
+      <li>Behavior Pack / Resource Pack template generation</li>
+      <li>Automatic reports for unsupported elements</li>
     </ul>
 
     <p>
-      ⚠️ Javaコード（Forge / Fabric API）の
-      <strong>完全自動変換はできません</strong>。
-      本ツールは「再制作を楽にする」ことを目的としています。
+      Java code (Forge / Fabric APIs) cannot be converted automatically.
+      This project aims to reduce manual work, not to provide full automation.
     </p>
 
-    <input type="file" disabled />
-    <button>変換機能は準備中です</button>
+    <button>Conversion feature coming soon</button>
 
     <div class="note">
-      このサイトは <strong>オープンソース</strong> として公開されています。
+      This site is open source.
     </div>
 
     <div class="links">
